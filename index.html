@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國坂神社 - 鳥取県東伯郡北栄町</title>
+    <style>
+        body {
+            font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            /* 背景画像を使用しない代わりに、和風の gradient を使用 */
+            background: linear-gradient(45deg, #2b2b2b 0%, #4a4a4a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        /* 和風の装飾パターンを追加 */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,0.03) 21%, rgba(255,255,255,0.03) 34%, transparent 35%, transparent),
+                radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,0.03) 21%, rgba(255,255,255,0.03) 34%, transparent 35%, transparent);
+            background-size: 13px 25px;
+            opacity: 0.3;
+        }
+        .header-content {
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 3px;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: white;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+        main {
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 0 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 2em;
+            margin-bottom: 2em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        /* 和風の装飾を追加 */
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #8b0000, #dc3545);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #666;
+            padding-bottom: 0.5em;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1em;
+            margin: 1em 0;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #666;
+            position: relative;
+            padding-left: 1em;
+        }
+        .info-label::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+            color: #8b0000;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>國坂神社</h1>
+            <div class="subtitle">式内社 - 伯耆国六座の一社</div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">概要</a></li>
+            <li><a href="#history">歴史</a></li>
+            <li><a href="#worship">祭神・祭事</a></li>
+            <li><a href="#access">アクセス</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="section">
+            <h2>概要</h2>
+            <div class="info-grid">
+                <div class="info-label">所在地</div>
+                <div>鳥取県東伯郡北栄町国坂388（国坂1500）</div>
+                
+                <div class="info-label">社格</div>
+                <div>旧久米郡旧郷社</div>
+                
+                <div class="info-label">立地</div>
+                <div>茶臼山の北側、山陰道のそばに鎮座</div>
+            </div>
+        </section>
+
+        <section id="history" class="section">
+            <h2>歴史</h2>
+            <p>國坂神社は、平安時代初期に編纂された「延喜式」の神名帳に記載された式内社です。伯耆国六座の4番目として掲載されており、古くから地域の重要な神社として崇敬されてきました。</p>
+        </section>
+
+        <section id="worship" class="section">
+            <h2>祭神・祭事</h2>
+            <div class="info-grid">
+                <div class="info-label">主祭神</div>
+                <div>少彦名神（すくなひこなのかみ）</div>
+                
+                <div class="info-label">例祭</div>
+                <div>10月15日</div>
+            </div>
+        </section>
+
+        <section id="access" class="section">
+            <h2>アクセス</h2>
+            <div class="info-grid">
+                <div class="info-label">住所</div>
+                <div>〒689-2221 鳥取県東伯郡北栄町国坂388</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 國坂神社</p>
+    </footer>
+</body>
+</html>
